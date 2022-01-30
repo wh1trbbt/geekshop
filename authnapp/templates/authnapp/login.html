@@ -13,10 +13,13 @@
     <input class="btn btn-outline-primary btn-block" type="submit" value="войти">
 </form>
 <a href="{% url 'auth:register' %}" class="btn btn-outline-secondary btn-block" role="button">
-    зарегистрироваться
+    Зарегистрироваться
 </a>
 <a href="{% url 'social:begin' 'github' %}?next=/" class="btn btn-outline-secondary btn-block" role="button">
     Вход через <i class="fa fa-github" aria-hidden="true"></i>
+</a>
+<a href="{% url 'social:begin' 'google-oauth2' %}?next=/" class="btn btn-outline-secondary btn-block" role="button">
+    Вход через <i class="fa fa-google" aria-hidden="true"></i>
 </a>
 
 {% endblock content %}
